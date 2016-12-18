@@ -1,9 +1,8 @@
 var express = require('express'),
         app = express();
-var path    = require("path");
+
 app.get('/', function(req, res) {
   console.log('Request received: ' + req.url);
-  //res.sendFile(path.join(__dirname+'/index.html'));
   res.send('Hello World!');
 });
 
